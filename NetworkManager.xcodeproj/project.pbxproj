@@ -10,6 +10,12 @@
 		2816DAE02936886F00CE4CDE /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2816DAD72936886F00CE4CDE /* NetworkManager.framework */; };
 		2816DAE52936886F00CE4CDE /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816DAE42936886F00CE4CDE /* NetworkManagerTests.swift */; };
 		2816DAE62936886F00CE4CDE /* NetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2816DADA2936886F00CE4CDE /* NetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2816DAF62936899B00CE4CDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816DAF52936899B00CE4CDE /* AppDelegate.swift */; };
+		2816DAF82936899B00CE4CDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816DAF72936899B00CE4CDE /* SceneDelegate.swift */; };
+		2816DAFA2936899B00CE4CDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816DAF92936899B00CE4CDE /* ViewController.swift */; };
+		2816DAFD2936899B00CE4CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2816DAFB2936899B00CE4CDE /* Main.storyboard */; };
+		2816DAFF2936899C00CE4CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2816DAFE2936899C00CE4CDE /* Assets.xcassets */; };
+		2816DB022936899C00CE4CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2816DB002936899C00CE4CDE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,14 @@
 		2816DADA2936886F00CE4CDE /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		2816DADF2936886F00CE4CDE /* NetworkManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2816DAE42936886F00CE4CDE /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		2816DAF32936899B00CE4CDE /* NetworkManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2816DAF52936899B00CE4CDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2816DAF72936899B00CE4CDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2816DAF92936899B00CE4CDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2816DAFC2936899B00CE4CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2816DAFE2936899C00CE4CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2816DB012936899C00CE4CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2816DB032936899C00CE4CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +59,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2816DAF02936899B00CE4CDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -53,6 +74,7 @@
 			children = (
 				2816DAD92936886F00CE4CDE /* NetworkManager */,
 				2816DAE32936886F00CE4CDE /* NetworkManagerTests */,
+				2816DAF42936899B00CE4CDE /* NetworkManagerExample */,
 				2816DAD82936886F00CE4CDE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +84,7 @@
 			children = (
 				2816DAD72936886F00CE4CDE /* NetworkManager.framework */,
 				2816DADF2936886F00CE4CDE /* NetworkManagerTests.xctest */,
+				2816DAF32936899B00CE4CDE /* NetworkManagerExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +103,20 @@
 				2816DAE42936886F00CE4CDE /* NetworkManagerTests.swift */,
 			);
 			path = NetworkManagerTests;
+			sourceTree = "<group>";
+		};
+		2816DAF42936899B00CE4CDE /* NetworkManagerExample */ = {
+			isa = PBXGroup;
+			children = (
+				2816DAF52936899B00CE4CDE /* AppDelegate.swift */,
+				2816DAF72936899B00CE4CDE /* SceneDelegate.swift */,
+				2816DAF92936899B00CE4CDE /* ViewController.swift */,
+				2816DAFB2936899B00CE4CDE /* Main.storyboard */,
+				2816DAFE2936899C00CE4CDE /* Assets.xcassets */,
+				2816DB002936899C00CE4CDE /* LaunchScreen.storyboard */,
+				2816DB032936899C00CE4CDE /* Info.plist */,
+			);
+			path = NetworkManagerExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +169,23 @@
 			productReference = 2816DADF2936886F00CE4CDE /* NetworkManagerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2816DAF22936899B00CE4CDE /* NetworkManagerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2816DB062936899C00CE4CDE /* Build configuration list for PBXNativeTarget "NetworkManagerExample" */;
+			buildPhases = (
+				2816DAEF2936899B00CE4CDE /* Sources */,
+				2816DAF02936899B00CE4CDE /* Frameworks */,
+				2816DAF12936899B00CE4CDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkManagerExample;
+			productName = NetworkManagerExample;
+			productReference = 2816DAF32936899B00CE4CDE /* NetworkManagerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,6 +200,9 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					2816DADE2936886F00CE4CDE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2816DAF22936899B00CE4CDE = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -165,6 +222,7 @@
 			targets = (
 				2816DAD62936886F00CE4CDE /* NetworkManager */,
 				2816DADE2936886F00CE4CDE /* NetworkManagerTests */,
+				2816DAF22936899B00CE4CDE /* NetworkManagerExample */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +239,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2816DAF12936899B00CE4CDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2816DB022936899C00CE4CDE /* LaunchScreen.storyboard in Resources */,
+				2816DAFF2936899C00CE4CDE /* Assets.xcassets in Resources */,
+				2816DAFD2936899B00CE4CDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +270,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2816DAEF2936899B00CE4CDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2816DAFA2936899B00CE4CDE /* ViewController.swift in Sources */,
+				2816DAF62936899B00CE4CDE /* AppDelegate.swift in Sources */,
+				2816DAF82936899B00CE4CDE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -211,6 +289,25 @@
 			targetProxy = 2816DAE12936886F00CE4CDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2816DAFB2936899B00CE4CDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2816DAFC2936899B00CE4CDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2816DB002936899C00CE4CDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2816DB012936899C00CE4CDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2816DAE72936886F00CE4CDE /* Debug */ = {
@@ -417,6 +514,60 @@
 			};
 			name = Release;
 		};
+		2816DB042936899C00CE4CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkManagerExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexa.NetworkManagerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2816DB052936899C00CE4CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkManagerExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexa.NetworkManagerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -443,6 +594,15 @@
 			buildConfigurations = (
 				2816DAED2936886F00CE4CDE /* Debug */,
 				2816DAEE2936886F00CE4CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2816DB062936899C00CE4CDE /* Build configuration list for PBXNativeTarget "NetworkManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2816DB042936899C00CE4CDE /* Debug */,
+				2816DB052936899C00CE4CDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
