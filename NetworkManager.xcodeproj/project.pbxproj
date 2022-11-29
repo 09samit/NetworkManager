@@ -16,6 +16,7 @@
 		2816DAFD2936899B00CE4CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2816DAFB2936899B00CE4CDE /* Main.storyboard */; };
 		2816DAFF2936899C00CE4CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2816DAFE2936899C00CE4CDE /* Assets.xcassets */; };
 		2816DB022936899C00CE4CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2816DB002936899C00CE4CDE /* LaunchScreen.storyboard */; };
+		2816DB0B29369BA700CE4CDE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816DB0A29369BA700CE4CDE /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		2816DAFE2936899C00CE4CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2816DB012936899C00CE4CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2816DB032936899C00CE4CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2816DB0A29369BA700CE4CDE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		2816DACD2936886F00CE4CDE = {
 			isa = PBXGroup;
 			children = (
+				2816DB0729368E6000CE4CDE /* Sources */,
 				2816DAD92936886F00CE4CDE /* NetworkManager */,
 				2816DAE32936886F00CE4CDE /* NetworkManagerTests */,
 				2816DAF42936899B00CE4CDE /* NetworkManagerExample */,
@@ -117,6 +120,30 @@
 				2816DB032936899C00CE4CDE /* Info.plist */,
 			);
 			path = NetworkManagerExample;
+			sourceTree = "<group>";
+		};
+		2816DB0729368E6000CE4CDE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2816DB0829368E7600CE4CDE /* Public */,
+				2816DB0929368E7D00CE4CDE /* Features */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2816DB0829368E7600CE4CDE /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				2816DB0A29369BA700CE4CDE /* NetworkManager.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		2816DB0929368E7D00CE4CDE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +225,7 @@
 				TargetAttributes = {
 					2816DAD62936886F00CE4CDE = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					2816DADE2936886F00CE4CDE = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -259,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2816DB0B29369BA700CE4CDE /* NetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +462,7 @@
 		2816DAEA2936886F00CE4CDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -452,6 +482,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +491,7 @@
 		2816DAEB2936886F00CE4CDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -487,6 +519,7 @@
 		2816DAED2936886F00CE4CDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -502,6 +535,7 @@
 		2816DAEE2936886F00CE4CDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
